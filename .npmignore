@@ -1,0 +1,21 @@
+# Source files
+src/
+tests/
+examples/
+.test/
+.github/
+
+# Configuration files
+.eslintrc.js
+jest.config.js
+rollup.config.js
+tsconfig.json
+
+# Build artifacts
+coverage/
+.github/
+.vscode/
+
+# Misc
+*.log
+.DS_Store
