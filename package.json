@@ -2,21 +2,67 @@
   "name": "postsync",
   "version": "1.0.0",
   "description": "PostSync turns your Postman collection into a type-safe, auto-synced API client. Generate TypeScript-safe calls, streamline fetch requests, and integrate seamlessly.",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.esm.js",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "test": "npm test"
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "test": "jest",
+    "lint": "eslint src --ext .ts,.tsx",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "clean": "rimraf dist",
+    "prebuild": "npm run clean",
+    "prepublishOnly": "npm run build",
+    "prepare": "npm run build"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/iietmoon/postsync.git"
   },
   "keywords": [
-    "\"postman\""
+    "postman",
+    "api",
+    "typescript",
+    "fetch",
+    "client",
+    "endpoints",
+    "rest"
   ],
   "author": "Othmane N.",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/iietmoon/postsync/issues"
   },
-  "homepage": "https://github.com/iietmoon/postsync#readme"
+  "homepage": "https://github.com/iietmoon/postsync#readme",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^28.0.3",
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-node-resolve": "^16.0.0",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@types/jest": "^29.5.0",
+    "@typescript-eslint/eslint-plugin": "^5.57.0",
+    "@typescript-eslint/parser": "^5.57.0",
+    "eslint": "^8.37.0",
+    "jest": "^29.5.0",
+    "prettier": "^2.8.7",
+    "rimraf": "^4.4.1",
+    "rollup": "^3.20.2",
+    "rollup-plugin-dts": "^6.1.1",
+    "rollup-plugin-typescript2": "^0.34.1",
+    "ts-jest": "^29.1.0",
+    "typescript": "^5.0.3"
+  },
+  "peerDependencies": {
+    "typescript": ">=4.0.0"
+  }
 }

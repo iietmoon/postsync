@@ -1,0 +1,47 @@
+{
+    "compilerOptions": {
+      /* Output Configuration */
+      "target": "ES2018",                     /* Targets a widely supported ECMAScript version */
+      "module": "ESNext",                     /* Use ESNext for modern module format */
+      "moduleResolution": "node",             /* Use Node's module resolution algorithm */
+      "esModuleInterop": true,                /* Enables compatibility with Babel-transformed modules */
+      "lib": ["ES2018", "DOM"],               /* Include both DOM and modern ECMAScript libraries */
+      "outDir": "./dist",                     /* Output directory for compiled files */
+      "declaration": true,                    /* Generate .d.ts files for TypeScript users */
+      "declarationDir": "./dist/types",       /* Directory for declaration files */
+      "sourceMap": true,                      /* Generate source maps for debugging */
+      
+      /* Type Checking */
+      "strict": true,                         /* Enable all strict type checking options */
+      "noImplicitAny": true,                  /* Error on expressions and declarations with an implied 'any' type */
+      "strictNullChecks": true,               /* Enable strict null checks */
+      "strictFunctionTypes": true,            /* Enable strict checking of function types */
+      "noImplicitThis": true,                 /* Error on 'this' expressions with an implied 'any' type */
+      "noUnusedLocals": true,                 /* Error on unused local variables */
+      "noUnusedParameters": true,             /* Error on unused parameters */
+      
+      /* Module Resolution */
+      "resolveJsonModule": true,              /* Include modules imported with .json extension */
+      "allowSyntheticDefaultImports": true,   /* Allow imports from modules with no default export */
+      "isolatedModules": true,                /* Ensure each file can be safely transpiled without relying on other imports */
+      
+      /* Advanced Options */
+      "skipLibCheck": true,                   /* Skip type checking of declaration files to speed up compilation */
+      "forceConsistentCasingInFileNames": true, /* Ensure consistent casing in file references */
+      "composite": true,                      /* Enable project compilation for faster rebuilds */
+      "incremental": true,                    /* Enable incremental compilation */
+      
+      /* Import Helpers */
+      "importHelpers": true,                  /* Import helpers from tslib once per project instead of including them per-file */
+      "rootDir": "./src"                      /* Specify the root directory of input files */
+    },
+    "include": [
+      "src/**/*"                             /* Include all files in the src directory */
+    ],
+    "exclude": [
+      "node_modules",                        /* Exclude node_modules directory */
+      "**/*.test.ts",                        /* Exclude test files */
+      "dist",                                /* Exclude output directory */
+      "examples"                             /* Exclude examples directory */
+    ]
+  }
