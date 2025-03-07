@@ -1,0 +1,22 @@
+{
+  "name": "postsync",
+  "version": "1.0.0",
+  "description": "PostSync turns your Postman collection into a type-safe, auto-synced API client. Generate TypeScript-safe calls, streamline fetch requests, and integrate seamlessly.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iietmoon/postsync.git"
+  },
+  "keywords": [
+    "\"postman\""
+  ],
+  "author": "Othmane N.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iietmoon/postsync/issues"
+  },
+  "homepage": "https://github.com/iietmoon/postsync#readme"
+}
