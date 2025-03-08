@@ -1,6 +1,6 @@
 {
   "name": "postsync",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "PostSync turns your Postman collection into a type-safe, auto-synced API client. Generate TypeScript-safe calls, streamline fetch requests, and integrate seamlessly.",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
