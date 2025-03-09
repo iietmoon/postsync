@@ -22,6 +22,8 @@
     "build": "rollup -c",
     "dev": "rollup -c -w",
     "test": "jest",
+    "test:manual": "node .retest/test.js",
+    "test:ssr": "node .retest/test-ssr.js", 
     "lint": "eslint src --ext .ts,.tsx",
     "format": "prettier --write \"src/**/*.ts\"",
     "clean": "rimraf dist",
