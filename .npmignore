@@ -3,7 +3,9 @@ src/
 tests/
 examples/
 .test/
+.retest/
 .github/
+/docs
 
 # Configuration files
 .eslintrc.js

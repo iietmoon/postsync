@@ -80,10 +80,23 @@ export function createApiEndpoints(postmanData: any): ApiEndpoints {
   return result;
 }
 
+
 /**
  * Utility function to get an endpoint by group, method, and name
  * Note: group and name parameters should be in camelCase
  */
+
+export function getEndpoints(
+  endpoints: ApiEndpoints,
+): ApiEndpoints| any {
+  return endpoints;
+}
+
+/**
+ * Utility function to get an endpoint by group, method, and name
+ * Note: group and name parameters should be in camelCase
+ */
+
 export function getEndpoint(
   endpoints: ApiEndpoints,
   group: string,

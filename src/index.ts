@@ -17,5 +17,6 @@ export type {
 export {
   getEndpoint,
   getGroupEndpoints,
-  getMethodEndpoints
+  getMethodEndpoints,
+  createApiEndpoints
 } from './core/parser';
